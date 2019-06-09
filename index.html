@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Other meta tags -->
+<meta name="author" content="Zufeng Wang">
+<meta name="description" content="Page dedicated to Blocksworld.">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/style.css">
+<!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+<title>Blocksworld</title>
+</head>
+<body>
+<div class="">
+  <div id="article-cover">
+    <div id="article-cover-content">
+      <div class="container">
+        <h1>Blocksworld</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-wrapper container">
+  <p><a href="https://play.blocksworld.com/about" target="_blank">Blocksworld</a> is an <strong>iOS sandbox game</strong>. It is about building worlds and sharing worlds.</p>
+  <p>It has a combination of features that set it apart from other iOS sandbox games:</p>
+  <table class="table table-sm">
+    <tbody>
+    <tr>
+      <th scope="row">3D</th>
+      <td>You build in three dimensions.</td>
+    </tr>
+    <tr>
+      <th scope="row">Blocks</th>
+      <td>Build using 3D shapes such as cubes, triangular prisms, cylinders and more complex models. Blocks can also be resized (most of them in three dimensions).</td>
+    </tr>
+    <tr>
+      <th scope="row">Physics</th>
+      <td>The whole world is a physics simulation. Some blocks such as motors have moving parts.</td>
+    </tr>
+    <tr>
+      <th scope="row">Scripting</th>
+      <td>Each block in the world has its own scripting panel. Each panel can have any number of rows of script. Each row has the form: <br><span class="code">if (conditions met): execute sequence of actions.</span>
+        <p>The actions in each line and scripting panel execute asynchronously. Interactions between scripts are event-driven. The game has a variety of actions to place into scripts. </p></td>
+    </tr>
+    </tbody>
+  </table>
+  <p>These features (particularly the scripting) allow for many creative possibilities.</p>
+  <br>
+  <h2>My experience</h2>
+  <p>
+    I joined Blocksworld in mid 2016. In the past I had played and enjoyed other sandbox games involving building and sharing worlds, but Blocksworld allowed for more advanced constructions.
+    I played exclusively on an iPhone and the syncing feature made it great for commutes on the train.
+  </p>
+  <p>
+    What I liked about Blocksworld was the gameplay. I found it far more creative than most other iOS games.
+    You build whatever you can think of, and there’s a diverse library of worlds to play and get inspiration from.
+  </p>
+  <p>
+    Another thing I liked about Blocksworld was its monetary model. Many F2P (free to play) games have gameplay that becomes increasingly more repetitive over time, and progress can be restricted by timers or the need for special currencies (that you buy with in-app purchases).
+    But Blocksworld’s F2P model was less restrictive. The main limitation is the set of blocks that you can use in each world.
+    You start with a few building blocks, and gradually expand your collection by buying blocks with in-game currency, or logging on daily.
+    You can never lose blocks, only gain more. The main way to earn in-game currency is to build and publish worlds.
+    Creativity and quality are rewarded.
+  </p>
+  <p>
+    I started small and gradually acquired more blocks and experience, so my worlds increased in complexity.
+    I eventually got to the stage where I had a virtually endless supply of blocks to build whatever I wanted.
+  </p>
+  <br>
+  <h3>My building style</h3>
+  <p>
+    I liked to build interactive and functional worlds, which tended to be heavy with scripting.
+    Most of my worlds were playable in some way and had a win condition, although I did have a few mainly decorative worlds.
+    I liked <strong>innovation</strong> and was interested in building things no one had done before
+    (such as randomly-generated <a href="#sudoku">Sudoku</a> and <a href="#minesweeper-2">Minesweeper</a>)
+    or making improved versions of existing concepts
+    (e.g. <a href="#roller-coaster-2">Roller Coaster 2</a> and <a href="#clash-of-clans">Clash of Clans</a>).
+  </p>
+  <p>
+    I also preferred to design things that were <strong>scalable</strong> and extensible.
+    For example, my <a href="https://play.blocksworld.com/play?world_id=28843558" target="_blank">Soda Can Launcher XL</a>
+    was designed to support any number of vertical magazines without needing to introduce any new scripts.
+    And my Ally Switcher (used in <a href="#clash-of-clans">Clash of Clans</a>) was designed to support any number of allies without introducing new global signals.
+    <sup><a tabindex="0" class="" role="button" data-toggle="popover" data-trigger="focus" title="Signals" data-content="(Think of it as the Observer Pattern) Blocksworld has two kinds of signals for communicating between scripts: Global notifies everything in the world. Local notifies other connected blocks.">[+]</a></sup>
+  </p>
+</div>
+<div class="section-wrapper shaded">
+<div class="container">
+  <h2>Notable worlds</h2>
+  <p>I <a href="https://play.blocksworld.com/profiles/4225830" target="_blank">published a lot of worlds</a>.
+    <sup><a tabindex="0" class="" role="button" data-toggle="popover" data-trigger="focus" data-content="This link only shows a subset of my most popular worlds.">[+]</a></sup>
+    Here is a selection. (They might be playable in certain browsers thanks to WebGL.)</p>
+  <div class="row">
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card" id="sudoku">
+        <img src="images/22067235__704ce686741230dc5f3845dffa7c00e9-440x440.jpg" alt="Sudoku 4x4 thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Sudoku 4x4</h5>
+          <p class="card-text">
+            Playable Sudoku game. Can generate 100+ different valid games and will verify the player’s solution, highlighting any mistakes.
+            <sup><a tabindex="0" class="" role="button" data-toggle="popover" data-trigger="focus" data-content="The cover image of this article shows what happens behind the scenes. I used lasers to generate the starting numbers.">[+]</a></sup>
+          </p>
+          <a href="https://play.blocksworld.com/play?world_id=22067235" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card" id="minesweeper-2">
+        <img src="images/26337190__b597838ecd6f6c8bab47a552c0e73050-440x440.jpg" alt="Minesweeper 2 thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Minesweeper 2</h5>
+          <div class="card-text">It plays like regular Minesweeper:
+          <ul>
+            <li>Randomly generates a grid of mines at the start</li>
+            <li>The player can uncover tiles and place flags</li>
+            <li>A counter shows the total number of mines</li>
+          </ul>
+          </div>
+          <a href="https://play.blocksworld.com/play?world_id=26337190" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card">
+        <img src="images/22501614__90ef03bdb37ad74956689ff9478e37b0-440x440.jpg" alt="Spleef Survival thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Spleef Survival</h5>
+          <p class="card-text">Endless <em>spleef</em> game with AI opponents. The opponents use a greedy strategy that works fairly well. The arena regenerates after each round.
+          </p>
+          <a href="https://play.blocksworld.com/play?world_id=22501614" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card">
+        <img src="images/23349008__dd027aadf44b0778e40f231d965c8892-440x440.jpg" alt="Tower of Hanoi thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Tower of Hanoi</h5>
+          <div class="card-text">Enforces the rules of Tower of Hanoi.
+            <ul>
+              <li>At most one layer can be moved at a time</li>
+              <li>A larger layer cannot be placed on top of a smaller layer</li>
+              <li>Goal: rebuild the tower in a different spot</li>
+            </ul>
+          </div>
+          <a href="https://play.blocksworld.com/play?world_id=23349008" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card">
+        <img src="images/16941794__75f937283ea20bea82ca7261758a16eb-440x440.jpg" alt="Destructive Infiltration thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Destructive Infiltration</h5>
+          <p class="card-text">Top-down stealth game. The patrolling enemies outmatch you easily in frontal attacks so you must attack from behind.</p>
+          <a href="https://play.blocksworld.com/play?world_id=16941794" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card">
+        <img src="images/28878701__3571e59ad89a328a8ee3076cfbcfbb4d-440x440.jpg" alt="Troll eats soda cans thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Troll eats soda cans</h5>
+          <p class="card-text">An example of how creativity is often about combining existing ideas. This world combined my long-running "Big Troll" character with my more recent "Soda Can Launcher".</p>
+          <a href="https://play.blocksworld.com/play?world_id=28878701" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card">
+        <img src="images/19236197__9adbfcb03c856164fa5e3b49484e50d3-440x440.jpg" alt="My Virtual Pet thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">My Virtual Pet</h5>
+          <p class="card-text">A tribute to <em>Can your pet?</em> and a parody of the other pet worlds that were popular at the time.</p>
+          <a href="https://play.blocksworld.com/play?world_id=19236197" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card" id="clash-of-clans">
+        <img src="images/20129007__94c86d0f3f16c1d0a394ab96526c585a-440x440.jpg" alt="Clash of Clans thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Clash of Clans</h5>
+          <p class="card-text">One of my more decorative worlds. The main gimmick is the ability to switch control to any barbarian.</p>
+          <a href="https://play.blocksworld.com/play?world_id=20129007" target="_blank" class="btn btn-primary">More</a>
+          <a href="https://youtu.be/pIVzrKc0Awc" target="_blank" class="btn btn-outline-primary">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card" id="roller-coaster-2">
+        <img src="images/23504221__26fe95f6a060d7b8df8628bbc845c6e5-440x440.jpg" alt="Roller Coaster 2 thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Roller Coaster 2</h5>
+          <p class="card-text">Fairly mechanical build. Highlights include the winding tracks, corkscrews and multiple camera angles. Probably doesn’t work well anymore due to the later wheel update.</p>
+          <a href="https://play.blocksworld.com/play?world_id=23504221" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-sm-6 my-2">
+      <div class="card">
+        <img src="images/16600237__9d40c0dfad255abf48be279bd51d17e5-440x440.jpg" alt="Bullet Time thumbnail" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Bullet Time</h5>
+          <p class="card-text">Dodge bullets in slow-motion, <em>Matrix</em> style. Win by getting enough near-misses. Quite fiddly due to needing to drag the limbs.</p>
+          <a href="https://play.blocksworld.com/play?world_id=16600237" target="_blank" class="btn btn-primary">More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>  <!-- end section-wrapper shaded -->
+<div class="section-wrapper container">
+  <h3>Limitations of Blocksworld</h3>
+  <p>
+    Blocksworld’s scripting system was great, but there were things it couldn’t do.
+    For example, it had very limited string processing and number-crunching capabilities.
+    Control flow was also limited. (A script is a sequence of <span class="code">if</span> statements.)
+  </p>
+  <p>
+    The editor itself had limitations. The block positioning system worked very well on a touch screen, but the scripting window was clunky sometimes.
+    Tasks such as inserting and reordering lines of code was much more cumbersome to do using drag and drop compared to in a text-based desktop IDE.
+    Code quality was also an issue. Every number was hard-coded and there was heaps of duplicate code in many of my more complex builds (e.g. Minesweeper and Sudoku).
+    There was no way to define functions or prefabs.
+    <sup><a tabindex="0" class="" role="button" data-toggle="popover" data-trigger="focus" data-content="A while ago I figured I could probably implement Conway’s Game of Life in Blocksworld. But I also realised it would require a huge amount of duplicate code. So I decided nah… (Might as well do it in JavaScript instead.)">[+]</a></sup>
+  </p>
+  <p>
+    However, Blocksworld’s building constraints are not a bad thing. Constraints can be useful—they simplify things by removing extra choices.
+    For example, blocks snap to integer positions when being placed and resized, and they can’t overlap each other in the editor. Most things can only be rotated in 90 degree increments.
+    Making blocks join together is a simple matter of placing them in adjacent squares so that one face is touching.
+    If Blocksworld had instead allowed blocks to be placed at any decimal coordinate and at any rotation, it would have made positioning and joining things far more complicated.
+    Additionally, there is a limited colour palette. Colouring your worlds is easy when there are only only around six shades of brown to choose from.
+    If builders could choose any RGB, there would be a lot of tricky decisions and a lot more horribly-coloured worlds.
+    Having these details abstracted away means you don’t have to worry about them, so you can focus more on building cool stuff.
+  </p>
+  <p>
+    Same goes with the scripting. Adding things like more number-crunching and IDE options would add greater control but also make it more complicated,
+    which wouldn’t necessarily make Blocksworld any better.
+  </p>
+  <p>
+    Restrictions are also good for a simpler learning curve.
+    Start with a limited set of features (e.g. limited set of blocks and actions), then gradually add more as the user gets more experienced.
+    <sup><a tabindex="0" class="" role="button" data-toggle="popover" data-trigger="focus" data-content="This could actually be a good idea for Blocksworld. In recent updates they added more actions, which probably made it harder for new players to get into scripting. They could start by hiding most of the actions and allowing users to unlock more when they got comfortable.">[+]</a></sup>
+  </p>
+  <p>
+    Overcoming constraints was also a fun challenge. For example, it was not possible to change a model’s displacement instantly. To make respawning systems, I used actions to make the model invisible and non-solid and then fly towards the target position before becoming visible again.
+    Another time, to get around Blocksworld’s limitation of not being able to perform arithmetic on two non-constant numbers, I built an addition calculator out of digital circuits.
+    It's also common for builders to make blocks overlap during runtime by using motors (or moving platforms like in this article's <a href="#article-cover">cover image</a>).
+  </p>
+</div>
+<div class="section-wrapper shaded">
+  <div class="container">
+    <figure class="mb-0">
+      <img src="https://i.imgur.com/tkjq0To.png" class="img-fluid" alt="Big Troll + Kart Base → Troll Kart" title="Big Troll + Kart Base → Troll Kart">
+      <figcaption>
+        <span class="font-italic">Creativity is often about combining existing ideas.</span>
+        <sup><a tabindex="0" class="" role="button" data-toggle="popover" data-trigger="focus" data-content="My Troll Kart also extends the Kart Base’s nitro ability by holding its mouth open during nitro and emitting a troll laugh SFX. Tricky to implement but worth it.">[+]</a></sup>
+      </figcaption>
+    </figure>
+  </div>
+</div>  <!-- end section-wrapper shaded -->
+<div class="container">
+  <div class="section-wrapper">
+    <h3>Moving on</h3>
+    <p>
+      I don’t play Blocksworld much now. This is partly due to hitting the limits and wanting more control, and also due to there being more important things in life.
+      Additionally, my Blocksworld portfolio became more impressive than any of my other code portfolios, so I decided that I should spend more time on other things.
+      However, I still consider Blocksworld to be one of the best games on the App Store due to the sheer freedom and creativity.
+      A natural progression from this could be developing video games in an environment like Unity.
+    </p>
+  </div>
+  <p><small class="text-muted">Last updated 6 September 2018</small></p>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="scripts/enable-popovers.js"></script>
+<script src="scripts/glow-internal-link.js"></script>
+</body>
+</html>

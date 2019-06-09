@@ -1,0 +1,46 @@
+#article-cover {
+  position: relative;
+  /* image, position, repeat */
+  background: url("https://i.imgur.com/avJK50w.jpg") center no-repeat;
+  /*background-size: cover;*/
+  min-height: 400px;
+}
+
+#article-cover-content {
+  position: absolute;
+  margin: auto;
+  bottom: 1em;
+  width: 100%;
+}
+
+/* glow effects for glow-internal-link */
+.glow {
+  background-color: #fdfbb1;
+}
+/* to transition from glow back to default */
+.stop-glow {
+  background-color: unset;
+  -webkit-transition: background-color 1.5s;
+  -moz-transition: background-color 1.5s;
+  -ms-transition: background-color 1.5s;
+  -o-transition: background-color 1.5s;
+  transition: background-color 1.5s;
+}
+
+.code {
+  font-family: monospace;
+  background-color: aliceblue;
+}
+
+.section-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.shaded {
+  background-color: #f7f7f7;
+}
+
+h1 {
+  color: white;
+}
